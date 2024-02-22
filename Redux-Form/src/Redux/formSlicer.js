@@ -1,7 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit'
 
 const initialState={
-    name:"empty",
+    name:"",
     age:0,
 }
 
@@ -10,7 +10,8 @@ const formSlicer=createSlice({
     initialState,
     reducers:{
         submit:(state,action)=>{
-
+            state.name=action.payload.username
+            state.age=action.payload.userage
         }
     }
 
