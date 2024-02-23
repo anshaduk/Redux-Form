@@ -6,7 +6,7 @@ const initialState={
 }
 
 const formSlicer=createSlice({
-    name:"form",
+    name:"forme",
     initialState,
     reducers:{
         submit:(state,action)=>{
