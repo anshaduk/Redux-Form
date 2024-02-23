@@ -4,8 +4,9 @@ import { submit } from '../Redux/formSlicer';
 const Form = () => {
     const[username,setUsername]=useState('');
     const [userage,setUserage]=useState(0);
-    const name=useSelector(state=>state.form.name)
-    const age=useSelector(state=>state.form.age)
+    const {name,age}=useSelector(state=>state.form)
+    // const name=useSelector(state=>state.form.name)
+    // const age=useSelector(state=>state.form.age)
     const dispatch=useDispatch();
     const handleSubmit=(e)=>{
         e.preventDefault();
